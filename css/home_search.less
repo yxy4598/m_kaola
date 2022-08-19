@@ -1,0 +1,51 @@
+@import url(./variables.less);
+
+.home {
+  .search {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10.6667vw;
+    padding: 0 3.2vw;
+    background-color: #fff;
+
+    .left {
+      display: flex;
+      align-items: center;
+      width: 74.6667vw;
+      height: 7.4667vw;
+      border-radius: 4vw;
+      border: .2667vw solid #f00;
+
+      .icon {
+        width: 3.2vw;
+        height: 3.3333vw;
+        margin: 0 2.6667vw;
+        background: url(../img/search.png) no-repeat;
+        background-size: 3.2vw 3.33333vw;
+      }
+
+      .content {
+        height: 3.3333vw;
+        line-height: 3.3333vw;
+        margin: 0 32px 0 6px;
+        color: #999;
+        font-size: 3.4667vw;
+      }
+    }
+
+    .right {
+      width: 16vw;
+      height: 7.4667vw;
+      line-height: 7.4667vw;
+      box-sizing: border-box;
+      border: 1px solid #e31436;
+      border-radius: 0.8vw;
+      text-align: center;
+      color: #e31436;
+      font-size: @smallFontSize;
+    }
+  }
+}

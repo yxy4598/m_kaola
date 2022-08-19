@@ -1,0 +1,39 @@
+@import url(./variables.less);
+
+.home {
+  .tab-control {
+    display: flex;
+    align-items: center;
+    margin: 4.2667vw 0 2.6667vw;
+    padding: 0 2.6667vw;
+
+    .item {
+      flex: 1;
+      text-align: center;
+
+      .title {
+        font-size: @bigFontSize;
+        color: #666;
+      }
+
+      .subtitle {
+        padding: 0 1.6vw;
+        border-radius: 2.4vw;
+        font-size: @smallFontSize;
+        line-height: 4.2667vw;
+        color: #999;
+      }
+
+      &.active {
+        .title {
+          color: @mainColor;
+        }
+
+        .subtitle {
+          background-color: @mainColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

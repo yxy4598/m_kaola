@@ -1,0 +1,54 @@
+@import url(./variables.less);
+
+.home {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .item {
+      width: 46.5333vw;
+      margin-top: 1.6vw;
+      font-size: @smallFontSize;
+      background-color: #fff;
+
+      &:nth-child(2n) {
+        margin-left: 1.6vw;
+      }
+
+      .album {
+        img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        padding: 1.3333vw 2.6667vw;
+
+        .company {
+          background: url(../img/company_01.png) no-repeat left center/4vw 4vw;
+          // padding-left: 5.3333vw;
+          text-indent: 5.3333vw;
+        }
+
+        .desc {
+          font-size: 3.4667vw;
+          /* 多行文本显示省略号 */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .discount {
+          color: @mainColor;
+
+          strong {
+            font-size: @bigFontSize;
+          }
+        }
+      }
+    }
+  }
+}

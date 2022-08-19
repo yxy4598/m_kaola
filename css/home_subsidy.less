@@ -1,0 +1,108 @@
+@import url(./variables.less);
+
+.home {
+  .subsidy {
+    width: 93.6vw;
+    height: 44vw;
+    margin: 3.2vw auto;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    background-color: #fff;
+
+    .header {
+      display: flex;
+      height: 10.6667vw;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 16.8vw;
+          height: 4.2667vw;
+        }
+
+        .time {
+          display: flex;
+          align-items: center;
+          margin-left: 2.6667vw;
+          font-size: @smallFontSize;
+
+          .item {
+            width: 5.3333vw;
+            height: 4.2667vw;
+            line-height: 4.2667vw;
+            text-align: center;
+            color: #fff;
+            background-color: @mainColor;
+            border-radius: .8vw;
+          }
+
+          .split {
+            margin: 0 .8vw;
+            color: @mainColor;
+          }
+        }
+      }
+
+      .right {
+        position: relative;
+        font-size: @smallFontSize;
+        color: @mainColor;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          width: 1.2vw;
+          height: 1.2vw;
+          border: .2667vw solid @mainColor;
+          border-left: transparent;
+          border-top: transparent;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .list {
+      display: flex;
+      // align-items: center;
+
+      .item {
+        flex: 1;
+        margin: 0 0.8vw;
+
+        img {
+          width: 20.9333vw;
+          height: 20.9333vw;
+        }
+
+        .info {
+          text-align: center;
+          font-size: @smallFontSize;
+
+          .new {
+            display: flex;
+            align-items: center;
+            color: @mainColor;
+
+            span {
+              font-weight: 700;
+              font-size: @bigFontSize;
+            }
+          }
+
+          .old {
+            color: #777;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+  }
+}
